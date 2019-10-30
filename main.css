@@ -1,0 +1,10 @@
+.v-enter-action,
+.v-leave-active {
+  transition: opacity 1s;
+}
+
+/* fade in or fade out from opacity 0 to 1  */
+.v-enter,
+.v-leave-to {
+  opacity: 0;
+}
