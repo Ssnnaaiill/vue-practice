@@ -1,9 +1,20 @@
 # vue-practice
 > Vue.js를 연습하는 레포지토리
 
+![](https://miro.medium.com/max/3840/1*nfvapd86apvGH-hNBYkYuw.png)
+
 ## Vue.js 설치하기
 
+## 파일 다운로드하고 읽어들이기
+
 [Vue.js 공식 사이트](https://vuejs.org/v2/guide/installation.html)에서 파일을 다운로드합니다.
+
+## CDN 사용해서 Vue.js 사용하기
+
+인터넷에 접속할 수 있는 환경일 경우 CDN을 사용할 수 있습니다.
+```html
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+```
 
 ## 참고할 만한 리소스
 
