@@ -20,6 +20,20 @@
         <p v-if="show">Show is TRUE!</p>
       </transition>
     </div>
+    <div id="app-7">
+      <ol>
+        <!--
+          produce todo objects to each todo-item
+          each contents can be change dynamicly
+          also needs key for each elements
+        -->
+        <todo-item
+          v-for="item in groceryList"
+          v-bind:todo="item"
+          v-bind:key="item.id"
+        ></todo-item>
+      </ol>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="main.js"></script>
   </body>
