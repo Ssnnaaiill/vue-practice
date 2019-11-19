@@ -7,10 +7,4 @@ export default new Vuex.Store({
   state: {
     count: 0,
   },
-  mutations: {
-    // commit mutations for count up
-    increment(state) {
-      state.count++;
-    },
-  },
 });

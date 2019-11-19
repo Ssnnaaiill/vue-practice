@@ -1,41 +1,21 @@
 <template>
-  <div id="app">
-    Parent counter: {{ count }}
-    <button v-on:click="addCounter">+</button>
-    <button v-on:click="subCounter">-</button>
-    <Child v-bind:passedCounter="counter"></Child>
-  </div>
+  <v-app>
+    <v-content>
+      <Counter />
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import Child from '@/components/Child';
+import Counter from './components/Counter';
 
 export default {
-  name: 'app',
+  name: 'App',
   data: () => ({
-    counter: 0,
+    //
   }),
   components: {
-    Child,
-  },
-  methods: {
-    addCounter() {
-      this.counter++;
-    },
-    subCounter() {
-      this.counter--;
-    },
+    Counter,
   },
 };
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
