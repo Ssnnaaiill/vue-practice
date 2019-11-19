@@ -1,5 +1,5 @@
 <template>
-  <div class="inner-wrap" fluid fill-height>
+  <div class="inner-wrap">
     <Loginform-component v-on:joinSubmit="joinSubmit"></Loginform-component>
   </div>
 </template>
@@ -14,7 +14,7 @@ export default {
   },
   methods: {
     joinSubmit(userName) {
-      this.$router.push(`/char-room/${userName}`);
+      this.$router.push(`/chat-room/${userName}`);
     },
   },
 };

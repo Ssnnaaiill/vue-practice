@@ -1,17 +1,23 @@
 import Vue from 'vue';
-import VueRouter from 'vue-router';
+import Router from 'vue-router';
 import Login from '@/views/Login.vue';
+import ChatRoom from '@/views/ChatRoom.vue';
 
-Vue.use(VueRouter);
+Vue.use(Router);
 
-const routes = [
-  {
-    path: '/',
-    name: 'Login',
-    component: Login,
-  },
-];
-
-export default new VueRouter({
-  routes,
+export default new Router({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes: [
+    {
+      path: '/',
+      name: 'Login',
+      component: Login,
+    },
+    {
+      path: '/char-room/:username',
+      name: 'ChatRoom',
+      component: ChatRoom,
+    },
+  ],
 });
