@@ -1,17 +1,15 @@
 <template>
-  <v-layout align-center justify-center>
-    <v-flex xs12 sm6>
-      <v-text-field
-        v-model="userName"
-        label="대화명"
-        required
-        v-on:keyup.enter="joinSubmit"
-      ></v-text-field>
-      <div class="text-xs-center">
-        <v-btn v-on:click="joinSubmit" round color="teal" dark>JOIN</v-btn>
-      </div>
-    </v-flex>
-  </v-layout>
+  <v-flex>
+    <v-text-field
+      v-model="userName"
+      label="대화명"
+      required
+      v-on:keyup.enter="joinSubmit"
+    ></v-text-field>
+    <div class="text-xs-center">
+      <v-btn v-on:click="joinSubmit" rounded color="teal" dark>JOIN</v-btn>
+    </div>
+  </v-flex>
 </template>
 
 <script>
@@ -29,4 +27,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped lang="scss">
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
